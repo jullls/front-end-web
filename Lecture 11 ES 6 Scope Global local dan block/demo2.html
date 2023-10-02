@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title> Function scope using var </title>
+</head>
+<body>
+	<script>
+		if (true) {
+			var a = 5; // x hanya dapat di akses dlm blk ini
+			console.log("Nilai a :", a); //5
+		}
+		//call Function
+		exampleFunction();
+		// a tidak dapat diakses di luar blok
+		console.log("Nilai a diluar fungsi:",a); //error
+		</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<body>
+
+	<script>
+	// Create class
+	
+	class Calculator{
+		constructor(myName){
+		this.studentName = myName;
+		}
+		//display nama studentName
+		printStudent(){
+		return 'My name is ' + this.studentName; // Added space after "is"
+		}
+		//penjumlahan
+		add(a, b){
+		return a + b;
+		}
+		//pengurangan
+		subtract (a, b){
+		return a - b;
+		}
+		//perkalian
+		multiply(a, b){
+		return a * b;
+		}
+		//pembagian
+		divide(a, b){ // Changed "devide" to "divide"
+		return a / b;
+		}
+	}
+		// Create object of class
+		const myCal= new Calculator("Semmy Wellem Taju");
+		document.write("<p>Me: " + myCal.printStudent() + "</p>");
+		
+		//Create a function
+		function calculate(a, b){
+			const addResult = myCal.add(a, b); // Changed variable names to avoid conflicts
+			const subtractResult = myCal.subtract(a, b);
+			const multiplyResult = myCal.multiply(a, b);
+			const divideResult = myCal.divide(a, b); // Changed "devide" to "divide"
+			
+			return [addResult, subtractResult, multiplyResult, divideResult]; // Changed variable names
+		}
+		//ES6 Destructuring(new way of assigning values to variables)
+		const [add, subtract, multiply, divide] = calculate(5, 10); // Changed variable names
+		//display in browser
+		document.write("<p>Sum: " + add + "</p>");
+		document.write("<p>Difference: " + subtract + "</p>");
+		document.write("<p>Product: " + multiply + "</p>");
+		document.write("<p>Division: " + divide + "</p>"); // Changed variable name
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title> Function scope using var </title>
+</head>
+<body>
+	<script>
+		const arrowFunction = () =>{
+			let z = 30; // x hanya dapat di akses dlm blk ini
+			console.log("Nilai z :", z); //30
+		}
+		//call Function
+		arrowFunction();
+		// z tidak dapat diakses di luar blok
+		console.log("Nilai z diluar fungsi:",z); //error
+		</script>
+</body>
+</html>

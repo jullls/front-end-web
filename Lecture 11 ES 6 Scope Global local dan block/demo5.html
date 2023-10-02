@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title> Function scope using var </title>
+</head>
+<body>
+	<div id ="output""></div>
+	<script>
+		//menggunakan template literal
+		const nama = `Semmy Wellem Taju`;
+		const usia = 30;
+		const pekerjaan = `programmer`;
+		
+		const profil = `
+			Name: ${nama} <br>
+			Age: ${usia} tahun<br>
+			Expertise/Job: ${pekerjaan}
+		`;
+		//Menampilkan output kedalam elemen HTML dengan ID "Output"
+		document.getElementById('output').innerHTML = profil;
+		</script>
+</body>
+</html>
